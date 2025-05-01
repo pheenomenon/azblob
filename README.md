@@ -11,30 +11,11 @@ npm install
 
 2. Create a `.env` file in the root directory with your Azure Storage credentials:
 ```
-AZURE_STORAGE_CONNECTION_STRING=your_connection_string
+CONTAINER_SAS_URL=your_connection_string
 ```
 
-3. Start the development server:
+3. Execute the script:
 ```bash
-npm run dev
+node index.js
 ```
 
-## Scripts
-
-- `npm start`: Start the production server
-- `npm run dev`: Start the development server with hot reload
-- `npm test`: Run tests
-
-## Project Structure
-
-```
-azblob/
-├── src/
-│   ├── index.js        # Entry point
-│   ├── config/         # Configuration files
-│   ├── routes/         # API routes
-│   └── services/       # Business logic
-├── tests/              # Test files
-├── .env               # Environment variables (create this)
-└── README.md          # This file
-``` 
